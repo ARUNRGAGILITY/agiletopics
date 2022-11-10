@@ -1,0 +1,53 @@
+{
+    "maxResults": 50,
+    "startAt": 0,
+    "total": 3,
+    "isLast": true,
+    "values": [
+        {
+            "id": 1,
+            "self": "https://agilefrontend.atlassian.net/rest/agile/1.0/board/1",
+            "name": "SAT board",
+            "type": "simple",
+            "location": {
+                "projectId": 10000,
+                "displayName": "SATeam1 (SAT)",
+                "projectName": "SATeam1",
+                "projectKey": "SAT",
+                "projectTypeKey": "software",
+                "avatarURI": "https://agilefrontend.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10421?size=small",
+                "name": "SATeam1 (SAT)"
+            }
+        },
+        {
+            "id": 2,
+            "self": "https://agilefrontend.atlassian.net/rest/agile/1.0/board/2",
+            "name": "SUP board",
+            "type": "simple",
+            "location": {
+                "projectId": 10001,
+                "displayName": "supportTeam1 (SUP)",
+                "projectName": "supportTeam1",
+                "projectKey": "SUP",
+                "projectTypeKey": "software",
+                "avatarURI": "https://agilefrontend.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10419?size=small",
+                "name": "supportTeam1 (SUP)"
+            }
+        },
+        {
+            "id": 3,
+            "self": "https://agilefrontend.atlassian.net/rest/agile/1.0/board/3",
+            "name": "AG board",
+            "type": "simple",
+            "location": {
+                "projectId": 10002,
+                "displayName": "AgileTopics (AG)",
+                "projectName": "AgileTopics",
+                "projectKey": "AG",
+                "projectTypeKey": "software",
+                "avatarURI": "https://agilefrontend.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10405?size=small",
+                "name": "AgileTopics (AG)"
+            }
+        }
+    ]
+}

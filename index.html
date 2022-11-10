@@ -19,11 +19,58 @@
         <div class="leftnav">
         </div>
         <div class="maincontent">
+
+            <table width="40vw" height="30vh" border="1">
+                <tr>
+                    <td width="2%" height="20%" class=""><b>Agile Scaling for Project Organizations</b></td>
+                </tr>
+                <tr>
+                    <td width="2%" height="20%" class="vertical_text">Business</td>
+                </tr>
+                <tr>
+                    <td width="2%" height="20%" class="vertical_text">Portfolio</td>    
+                </tr>
+                <tr>
+                    <td width="2%" height="20%" class="vertical_text">Program</td>    
+                </tr>
+                <tr>
+                    <td width="2%" height="20%" class="vertical_text">Project</td>    
+                </tr>
+            </table>
+            <div class="jsontable">
+            <b>JSON details</b>
+                <div class="jsoninfo">
+
+                </div>
+            </div>
         </div>
         <div class="rightnav">
         </div>
         <div class="footer">
         </div>
     </div>
+
+    <script>
+        var jsonInfo = document.getElementById('jsoninfo');
+
+        var promise1 = new Promise(function(resolve, reject) {
+        var xhr = new XMLHttpRequest(),
+            method = "GET",
+            url = "https://agilefrontend.atlassian.net/rest/agile/1.0/board";
+
+        xhr.open(method, url, true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+            resolve(JSON.parse(xhr.responseText));
+            }
+        };
+        xhr.send();
+        });
+
+        promise1.then(function(value) {
+        jsonInfo.textContent = value.maxResults;
+        });
+
+    </script>
 </body>
 </html>
