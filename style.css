@@ -1,0 +1,44 @@
+.title {
+    background-color: beige;
+    width: 100%;
+    height: 5vh;
+}
+
+.messages {
+    background-color: skyblue;
+    width: 100%;
+    height: 4vh;
+}
+.menu {
+    background-color: aqua;
+    width: 100%;
+    height: 5vh;
+}
+
+.leftnav {
+    background-color: blueviolet;
+    float: left;
+    width: 20%;
+    height: 70vh;
+}
+
+.maincontent {
+    background-color: cadetblue;
+    float: left;
+    width: 60%;
+    height: 70vh;
+}
+
+.rightnav {
+    background-color: burlywood;
+    float: left;
+    width: 20%;
+    height: 70vh;
+}
+
+.footer {
+    background-color: cornflowerblue;
+    clear: both;
+    width: 100%;
+    height: 12vh;
+}
